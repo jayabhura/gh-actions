@@ -10,5 +10,12 @@ jobs:
          uses: actions/checkout@v6
        - name: List files
          run: ls -la
+       - name: Generate ASCII Art
+         run: |
+           sudo apt-get install -y figlet
+           figlet: "GH-200 CoHACK"
+           echo "-------------------------"
+           figlet -f digital "GitHub Actions"
+           echo "ASCII art generated"
 
          
