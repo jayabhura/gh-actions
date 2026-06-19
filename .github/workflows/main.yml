@@ -17,5 +17,7 @@ jobs:
            echo "-------------------------"
            figlet -f digital "GitHub Actions"
            echo "ASCII art generated"
-
-         
+       - name: Run Shell Script
+         run: |
+          chmod +x ./scripts/welcome.sh
+          ./scripts/welcome.sh
